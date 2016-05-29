@@ -188,19 +188,28 @@ body {
   font-family: "Open Sans", "OpenSans", "Arial", "Helvetica", sans-serif;
   color: #AAA;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 170%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 p {
   margin: 18px 0;
 }
 
-header .inner,
-section .inner,
-footer .inner {
+footer > div,
+header > div,
+section > div {
+  min-width: 320px;
   max-width: 1080px;
   margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
+img {
+  display: block;
 }
 
 header nav {
